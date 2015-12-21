@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRL"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/deree"
+    android:alpha="0.75">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordTF"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/rememberMeCB"
+        android:layout_alignEnd="@+id/rememberMeCB"
+        android:alpha="1"
+        android:hint="Password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameTF"
+        android:layout_above="@+id/passwordTF"
+        android:layout_centerHorizontal="true"
+        android:alpha="1"
+        android:hint="Username" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:id="@+id/rememberMeCB"
+        android:checked="false"
+        android:textColor="#010101"
+        android:layout_below="@+id/passwordTF"
+        android:layout_centerHorizontal="true"
+        android:alpha="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:id="@+id/logInBT"
+        android:layout_below="@+id/rememberMeCB"
+        android:layout_centerHorizontal="true"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:alpha="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cannot access your account?"
+        android:id="@+id/accessTV"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textColor="#010101"
+        android:alpha="1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orTV"
+        android:text="OR"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/logInBT"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/signUpBT"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:alpha="1"
+        android:layout_below="@+id/orTV"
+        android:layout_alignStart="@+id/logInBT" />
+</RelativeLayout>

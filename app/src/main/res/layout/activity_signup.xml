@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/demand"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordTF"
+        android:text="Password"
+        android:alpha="1"
+        android:layout_above="@+id/signUpBT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameTF"
+        android:text="Username"
+        android:alpha="1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:focusableInTouchMode="false"
+        android:textColor="@android:color/holo_blue_light"
+        android:background="@android:color/black" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/signUpBT"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:alpha="1"
+        android:layout_marginBottom="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailTF"
+        android:text="Email"
+        android:background="@android:color/black"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_above="@+id/passwordTF"
+        android:layout_alignStart="@+id/passwordTF"
+        android:layout_marginBottom="26dp" />
+</RelativeLayout>

@@ -1,0 +1,287 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.mike.courseval.evalActivity"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ITC 2225 - Mobile Applications Development"
+        android:id="@+id/courseNameTV"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/courseTV"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faculty:"
+        android:id="@+id/facultyTV"
+        android:layout_below="@+id/courseNameTV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maira Kotsovoulou"
+        android:id="@+id/facultyNameTV"
+        android:layout_below="@+id/courseNameTV"
+        android:layout_toEndOf="@+id/facultyTV"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/facultyNameTV"
+        android:layout_toEndOf="@+id/courseNameTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1"
+        android:id="@+id/quest1TV"
+        android:layout_alignBottom="@+id/scrollView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 2"
+        android:id="@+id/quest2TV"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 3"
+        android:id="@+id/quest3TV"
+        android:layout_below="@+id/quest2TV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 4"
+        android:id="@+id/quest4TV"
+        android:layout_below="@+id/quest3TV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 5"
+        android:id="@+id/quest5TV"
+        android:layout_below="@+id/quest4TV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 6"
+        android:id="@+id/quest6TV"
+        android:layout_below="@+id/quest5TV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 7"
+        android:id="@+id/quest7TV"
+        android:layout_below="@+id/quest6TV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 8"
+        android:id="@+id/quest8TV"
+        android:layout_below="@+id/quest7TV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 9"
+        android:id="@+id/quest9TV"
+        android:layout_below="@+id/quest8TV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 10"
+        android:id="@+id/quest10TV"
+        android:layout_below="@+id/quest9TV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional Comments:"
+        android:id="@+id/addCommentsTV"
+        android:layout_below="@+id/quest10TV"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentsET"
+        android:layout_alignBottom="@+id/addCommentsTV"
+        android:layout_alignEnd="@+id/courseNameTV"
+        android:layout_toEndOf="@+id/addCommentsTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Credits:"
+        android:id="@+id/creditsTV"
+        android:layout_below="@+id/commentsET"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0-30"
+        android:id="@+id/RB1"
+        android:checked="false"
+        android:layout_below="@+id/creditsTV"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="31-60"
+        android:id="@+id/RB2"
+        android:layout_alignTop="@+id/RB1"
+        android:layout_toEndOf="@+id/RB1"
+        android:checked="false"
+        android:textSize="12dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="61-90"
+        android:id="@+id/RB3"
+        android:checked="false"
+        android:layout_alignTop="@+id/RB2"
+        android:layout_alignStart="@+id/commentsET"
+        android:textSize="12dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="91 or above"
+        android:id="@+id/RB4"
+        android:checked="false"
+        android:layout_alignTop="@+id/RB3"
+        android:layout_alignEnd="@+id/courseNameTV"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reason for taking this course:"
+        android:id="@+id/reasonTV"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/RB1"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major Requirement"
+        android:id="@+id/majorRB"
+        android:checked="false"
+        android:layout_below="@+id/reasonTV"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General Education Requirement"
+        android:id="@+id/generalRB"
+        android:checked="false"
+        android:textSize="12dp"
+        android:layout_above="@+id/majorElRB"
+        android:layout_alignParentEnd="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major Elective"
+        android:id="@+id/majorElRB"
+        android:checked="false"
+        android:layout_below="@+id/majorRB"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General Elective"
+        android:id="@+id/generalElRB"
+        android:checked="false"
+        android:layout_below="@+id/generalRB"
+        android:layout_alignStart="@+id/generalRB"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for participating!"
+        android:id="@+id/thankYouTV"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/majorElRB"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitBT"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/generalElRB"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancelBT"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/submitBT" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course:"
+        android:id="@+id/courseTV"
+        android:layout_above="@+id/facultyTV"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I want to take part in the competition!"
+        android:id="@+id/compCB"
+        android:checked="false"
+        android:textSize="12dp"
+        android:layout_below="@+id/majorElRB"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
