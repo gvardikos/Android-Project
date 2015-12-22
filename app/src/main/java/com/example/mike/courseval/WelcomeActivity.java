@@ -2,16 +2,22 @@ package com.example.mike.courseval;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 public class WelcomeActivity extends Activity {
+
+    public static final String TAG = WelcomeActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
+
+        // StudentDbHelper x = new StudentDbHelper(getApplicationContext());
+        Log.d(TAG, "db ok");
 
     }
 
